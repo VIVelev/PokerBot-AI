@@ -1,6 +1,6 @@
 from pypokerengine.api.game import start_poker, setup_config
 
-from bots.ai_bot import MonteCarloBot
+from bots.monte_carlo import MonteCarloBot
 from bots.callbot import CallBot
 import numpy as np
 
