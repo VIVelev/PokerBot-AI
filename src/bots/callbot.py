@@ -1,7 +1,9 @@
 from pypokerengine.players import BasePokerPlayer
 import numpy as np
-from sklearn.neural_network import MLPRegressor
 
+__all__ = [
+    'CallBot',
+]
 
 class CallBot(BasePokerPlayer):
     def declare_action(self, valid_actions, hole_card, round_state):

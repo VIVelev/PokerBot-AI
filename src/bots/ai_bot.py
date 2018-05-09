@@ -2,6 +2,9 @@ from pypokerengine.engine.hand_evaluator import HandEvaluator
 from pypokerengine.players import BasePokerPlayer
 from pypokerengine.utils.card_utils import _pick_unused_card, _fill_community_card, gen_cards
 
+__all__ = [
+    'MonteCarloBot',
+]
 
 # Estimate the ratio of winning games given the current state of the game
 def estimate_win_rate(nb_simulation, nb_player, hole_card, community_card=None):
@@ -26,7 +29,7 @@ def montecarlo_simulation(nb_player, hole_card, community_card):
     return 1 if my_score >= max(opponents_score) else 0
 
 
-class DataBloggerBot(BasePokerPlayer):
+class MonteCarloBot(BasePokerPlayer):
     def __init__(self):
         super().__init__()
         self.wins = 0
@@ -89,4 +92,4 @@ class DataBloggerBot(BasePokerPlayer):
 
 
 def setup_ai():
-    return DataBloggerBot()
+    return MonteCarloBot()

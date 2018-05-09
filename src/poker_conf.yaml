@@ -1,8 +1,0 @@
-ai_players:
-- name: MonteCarlo
-  path: /Users/victor/Documents/PokerBot-AI/src/ai_bot.py
-ante: 0
-blind_structure: null
-initial_stack: 100
-max_round: 10
-small_blind: 10

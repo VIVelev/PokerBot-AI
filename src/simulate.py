@@ -1,11 +1,11 @@
 from pypokerengine.api.game import start_poker, setup_config
 
-from callbot import CallBot
-from ai_bot import DataBloggerBot
+from bots.ai_bot import MonteCarloBot
+from bots.callbot import CallBot
 import numpy as np
 
 if __name__ == '__main__':
-    blogger_bot = DataBloggerBot()
+    blogger_bot = MonteCarloBot()
 
     # The stack log contains the stacks of the Data Blogger bot after each game (the initial stack is 100)
     stack_log = []

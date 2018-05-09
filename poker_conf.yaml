@@ -1,0 +1,8 @@
+ai_players:
+- name: MonteCarlo
+  path: ./src/bots/ai_bot.py
+ante: 0
+blind_structure: null
+initial_stack: 1000
+max_round: 100
+small_blind: 10
